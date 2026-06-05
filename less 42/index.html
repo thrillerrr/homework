@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width='device-width', initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://e7.pngegg.com/pngimages/483/183/png-clipart-emoticon-smiley-crying-computer-icons-emoticon-crying-smiley-sticker-thumbnail.png"
+      type="image/x-icon"
+    />
+    <title>Third try to do form</title>
+  </head>
+  <body>
+    <form class="form">
+      <fieldset class="form-group">
+        <legend class="form-group-title">Ваши личные данные</legend>
+        <label for="name" class="label">Ваше имя</label>
+        <input
+          id="name"
+          class="input"
+          type="text"
+          class="input"
+          placeholder="Имя"
+          name="name"
+          required
+        />
+        <label for="numeric" class="label">Ваш возраст</label>
+        <input
+          id="numeric"
+          class="input"
+          type="number"
+          class="input"
+          placeholder="Ваш возраст"
+          name="age"
+          required
+        />
+        <label for="phone" class="label">Ваш номер телефона</label>
+        <input
+          id="phone"
+          class="input"
+          type="tel"
+          class="input"
+          placeholder="Ваш номер телефона"
+          name="phone"
+          required
+        />
+        <label for="email" class="label">Ваша почта</label>
+        <input
+          id="email"
+          class="input"
+          type="email"
+          class="input"
+          placeholder="Ваша почта"
+          name="email"
+          required
+        />
+      </fieldset>
+      <fieldset class="form-group">
+        <label for="textarea" class="label">Сообщение</label>
+        <textarea
+          name="textarea"
+          id="textarea"
+          class="textarea"
+          placeholder="Ваше сообщение"
+          required
+        ></textarea>
+        <label for="checkbox" class="label">
+          <input
+            type="checkbox"
+            name="checkbox"
+            id="checkbox"
+            class="checkbox"
+            required
+          />
+          <span>Я принимаю правила</span>
+        </label>
+      </fieldset>
+      <button class="button" type="submit">Отправить</button>
+    </form>
+  </body>
+</html>
