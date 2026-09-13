@@ -1,0 +1,1303 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Pulse - Фитнесс Центр</title>
+  </head>
+
+  <body class="body">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo">
+            <img src="./icons/logo.svg" alt="Логотип фитнесс центра Pulse" />
+          </div>
+          <nav class="header__menu">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="#" class="header__link">Home</a>
+              </li>
+              <li class="header__item">
+                <a href="#catalogs" class="header__link">Catalogs</a>
+              </li>
+              <li class="header__item">
+                <a href="#blog" class="header__link">Blog</a>
+              </li>
+              <li class="header__item">
+                <a href="#collections" class="header__link">Collections</a>
+              </li>
+              <li class="header__item">
+                <a href="#contact" class="header__link">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__controls">
+            <button class="header__action-cart" aria-label="Корзина">
+              <svg>
+                <use href="./icons/sprite.svg#cart"></use>
+              </svg>
+            </button>
+            <button class="header__action-search" aria-label="Поиск">
+              <svg>
+                <use href="./icons/sprite.svg#search"></use>
+              </svg>
+            </button>
+            <button
+              class="header__burger"
+              type="button"
+              aria-label="Открыть меню"
+              aria-expanded="false"
+            >
+              <svg class="header__burger-icon header__burger-icon--open">
+                <use href="./icons/burger.svg#burger"></use>
+              </svg>
+              <svg class="header__burger-icon header__burger-icon--close">
+                <use href="./icons/burger.svg#close"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <div class="container container--xl">
+          <div class="hero__inner">
+            <div class="container">
+              <h1 class="hero__title">
+                POWER
+                <span>FROM WITHIN</span>
+              </h1>
+              <span class="hero__decoration">within</span>
+            </div>
+
+            <div class="hero__img">
+              <a href="#services" class="hero__link">
+                <svg width="122" height="122">
+                  <use href="./icons/hero-sprite.svg#btn-arrow"></use>
+                </svg>
+              </a>
+              <picture>
+                <source srcset="./images/hero-img.webp" type="image/webp" />
+                <img
+                  src="./images/hero-img.png"
+                  alt="Изображение спортивных рук мужчины на турнике"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+
+            <div id="services" class="hero__services">
+              <article class="hero__services-card">
+                <a href="#" class="hero__card-footer-link">
+                  <div class="hero__card-header">
+                    <h2 class="hero__card-subtitle">FITNESS</h2>
+                    <p class="hero__card-header-txt">IMPROVE YOUR STRENGH</p>
+                  </div>
+                  <div class="hero__card-footer">
+                    <span class="hero__card-footer-txt">GET STARTED</span>
+                    <svg width="32" height="32">
+                      <use href="./icons/arrow.svg"></use>
+                    </svg>
+                  </div>
+                </a>
+              </article>
+              <article class="hero__services-card">
+                <a href="#" class="hero__card-footer-link">
+                  <div class="hero__card-header">
+                    <h2 class="hero__card-subtitle">BODYBUILDING</h2>
+                    <p class="hero__card-header-txt">GET BEST BODY SHAPES</p>
+                  </div>
+                  <div class="hero__card-footer">
+                    <span class="hero__card-footer-txt">GET STARTED</span>
+                    <svg width="32" height="32">
+                      <use href="./icons/arrow.svg"></use>
+                    </svg>
+                  </div>
+                </a>
+              </article>
+              <article class="hero__services-card">
+                <a href="#" class="hero__card-footer-link">
+                  <div class="hero__card-header">
+                    <h2 class="hero__card-subtitle">CROSSFIT</h2>
+                    <p class="hero__card-header-txt">THE BEST DIETARY PLANS</p>
+                  </div>
+                  <div class="hero__card-footer">
+                    <span class="hero__card-footer-txt">GET STARTED</span>
+                    <svg width="32" height="32">
+                      <use href="./icons/arrow.svg"></use>
+                    </svg>
+                  </div>
+                </a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="product">
+        <div class="container">
+          <div class="product__inner">
+            <div class="product__container">
+              <div class="product__info">
+                <h2 class="product__title">
+                  Be
+                  <strong>better</strong>
+                </h2>
+                <h3 class="product__subtitle">Our story</h3>
+                <p class="product__txt">
+                  Ac nec est ultrices varius morbi et non. Donec quam sed eget
+                  purus. Elementum sed malesuada senectus feugiat faucibus morbi
+                  a neque ultricies. Nisl maecenas eget ultricies in lobortis.
+                </p>
+                <h3 class="product__subtitle">Our mission</h3>
+                <p class="product__txt">
+                  Ac nec est ultrices varius morbi et non. Donec quam sed eget
+                  purus. Elementum sed malesuada senectus feugiat.
+                </p>
+              </div>
+
+              <a class="product__link" href="#">Read more</a>
+            </div>
+            <div class="product__prod">
+              <div class="product__values">
+                <div class="product__value">
+                  <span class="product__unit">24g</span>
+                  <span class="product__value-txt">protein</span>
+                </div>
+                <div class="product__value-bcaa">
+                  <span class="product__unit">5.5g</span>
+                  <span class="product__value-txt">bcaas</span>
+                </div>
+              </div>
+
+              <div class="product__col">
+                <picture>
+                  <source srcset="./images/product.webp" type="image/webp" />
+                  <img
+                    class="product__img"
+                    width="476"
+                    height="679"
+                    src="./images/product.png"
+                    alt="Черная банка протеина марки WHEY"
+                    loading="lazy"
+                  />
+                </picture>
+
+                <source srcset="./images/sticker.web" type="image/webp" />
+                <img
+                  width="158"
+                  height="158"
+                  class="product__sticker"
+                  src="./images/sticker.png"
+                  alt="Логотип фитнесс-центра"
+                  loading="lazy"
+                />
+
+                <div class="product__slider-btn">
+                  <button
+                    class="product__btn"
+                    data-index="1"
+                    aria-label="Кнопка навигации по слайдеру с продуктами клуба"
+                  ></button>
+                  <button
+                    class="product__btn"
+                    data-index="2"
+                    aria-label="Кнопка навигации по слайдеру с продуктами клуба"
+                  ></button>
+                  <button
+                    class="product__btn"
+                    data-index="3"
+                    aria-label="Кнопка навигации по слайдеру с продуктами клуба"
+                  ></button>
+                  <button
+                    class="product__btn"
+                    data-index="4"
+                    aria-label="Кнопка навигации по слайдеру с продуктами клуба"
+                  ></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ticker">
+        <div class="container container--xl">
+          <div class="ticker__wrapper">
+            <div class="ticker__inner">
+              <span class="ticker__txt">Approach</span>
+              <span class="ticker__txt">Cardio</span>
+              <span class="ticker__txt">Kickbox</span>
+              <span class="ticker__txt">Jiu-jitsu</span>
+              <span class="ticker__txt">Boxing</span>
+              <span class="ticker__txt">Approach</span>
+              <span class="ticker__txt">Cardio</span>
+              <span class="ticker__txt">Kickbox</span>
+              <span class="ticker__txt">Jiu-jitsu</span>
+              <span class="ticker__txt">Boxing</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="collections" id="collections">
+        <div class="container container--xl">
+          <div class="collections__wrapper">
+            <div class="collections__inner">
+              <article class="collections__card">
+                <a href="#" class="collections__link">
+                  <picture>
+                    <source
+                      srcset="./images/collections/negrpump2.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      width="640"
+                      height="704"
+                      src="./images/collections/negrpump2.jpg"
+                      alt="Спортивный мужчина упражняется с канатами"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <div class="collections__btn">
+                    <span class="collections__txt">Gear</span>
+                    <svg width="21" height="21">
+                      <use href="./icons/review.svg#arrow"></use>
+                    </svg>
+                  </div>
+                </a>
+              </article>
+              <article class="collections__card">
+                <a href="#" class="collections__link">
+                  <picture>
+                    <source
+                      srcset="./images/collections/acessoriesweb.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      width="640"
+                      height="704"
+                      src="./images/collections/acessories.png"
+                      alt="Спортивные акссесуары и экипировка , гиря , гантели , фитнесс браслет , спортивная женская майка"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <div class="collections__btn">
+                    <span class="collections__txt">Acessories</span>
+                    <svg width="21" height="21">
+                      <use href="./icons/review.svg#arrow"></use>
+                    </svg>
+                  </div>
+                </a>
+              </article>
+              <article class="collections__card">
+                <a href="#" class="collections__link">
+                  <picture>
+                    <source
+                      srcset="./images/collections/womanpump2.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      width="640"
+                      height="704"
+                      src="./images/collections/womanpump2.png"
+                      alt="Спортивная девушка упражняется с гирей в зале фитнесс центра"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <div class="collections__btn">
+                    <span class="collections__txt">Design</span>
+                    <svg width="21" height="21">
+                      <use href="./icons/review.svg#arrow"></use>
+                    </svg>
+                  </div>
+                </a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="programs" id="programms">
+        <div class="container container--xl">
+          <span class="programs__dec">Within</span>
+          <div class="programs__inner">
+            <div class="container-l">
+              <div class="programs__row">
+                <h2 class="programs__title">Our programs</h2>
+                <p class="programs__txt">
+                  Ac nec est ultrices varius morbi et non. Donec quam sed eget
+                  purus. Elementum sed malesuada senectus.
+                </p>
+              </div>
+              <div class="programs__info">
+                <article class="programs__card">
+                  <a href="#" class="programs__link">
+                    <div class="programs__image">
+                      <picture>
+                        <source
+                          srcset="./images/programs/kickboxing.webp"
+                          type="image/webp"
+                        />
+                        <img
+                          width="374"
+                          height="488"
+                          src="./images/programs/kickboxing.png"
+                          alt="Девушка занимается единоборствами под руководством тренера"
+                          loading="lazy"
+                        />
+                      </picture>
+                    </div>
+                    <div class="programs__product">
+                      <div class="programs__features">
+                        <span class="programs__card-txt">Coaching</span>
+                        <span class="programs__card-txt">Strength</span>
+                      </div>
+                      <h3 class="programs__card-subtitle">GYM DAY</h3>
+                    </div>
+                  </a>
+                </article>
+                <article class="programs__card">
+                  <a href="#" class="programs__link">
+                    <div class="programs__image">
+                      <picture>
+                        <source
+                          srcset="./images/programs/gyria.webp"
+                          type="image/webp"
+                        />
+                        <img
+                          width="374"
+                          height="488"
+                          src="./images/programs/gyria.png"
+                          alt="Мужчина в фитнесс центре занимается кардио тренировкой с гирей"
+                          loading="lazy"
+                        />
+                      </picture>
+                    </div>
+                    <div class="programs__product">
+                      <div class="programs__features">
+                        <span class="programs__card-txt">Coaching</span>
+                        <span class="programs__card-txt">Strength</span>
+                      </div>
+                      <h3 class="programs__card-subtitle">CARDIO WORKOUT</h3>
+                    </div>
+                  </a>
+                </article>
+                <article class="programs__card">
+                  <a href="#" class="programs__link">
+                    <div class="programs__image">
+                      <picture>
+                        <source
+                          srcset="./images/programs/planka.webp"
+                          type="image/webp"
+                        />
+                        <img
+                          width="374"
+                          height="488"
+                          src="./images/programs/planka.png"
+                          alt="Спортивная девушка с розовыми волосами укрепляет мышцы тела стоя в планке в фитнесс центре"
+                          loading="lazy"
+                        />
+                      </picture>
+                    </div>
+                    <div class="programs__product">
+                      <div class="programs__features">
+                        <span class="programs__card-txt">Coaching</span>
+                        <span class="programs__card-txt">Strength</span>
+                      </div>
+                      <h3 class="programs__card-subtitle">BODY STRENGTH</h3>
+                    </div>
+                  </a>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="review">
+        <div class="container container--xl">
+          <div class="review__inner">
+            <a href="#timetable" class="review__link">
+              <div class="review__btn">
+                <span class="review__link-txt">VIEW FULL TIMETABLE</span>
+                <svg width="21" height="21">
+                  <use href="./icons/review.svg#arrow"></use>
+                </svg>
+              </div>
+            </a>
+
+            <div class="review__background">
+              <picture>
+                <source
+                  srcset="./images/review/leftsideimg.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./images/review/leftsideimg.jpg"
+                  alt="Девушка в боксерских перчатках отрабатывает удары в зале фитнесс центра"
+                  loading="lazy"
+                />
+              </picture>
+
+              <div class="review__col">
+                <div class="img__wrapper">
+                  <picture>
+                    <source
+                      srcset="./images/review/blurimg.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      src="./images/review/blurimg.png"
+                      alt="Девушка под руководством тренера занимается единоборствами , изображение размытое"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+                <article class="review__card">
+                  <p class="review__txt">
+                    “This place help me accomplished my biggest goal, be in
+                    shape”
+                  </p>
+                  <div class="review__visitor">
+                    <span class="review__subtitle">Graphic Designer</span>
+                    <span class="review__name">Monica Belsley</span>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="container container--xl">
+          <div class="about__wrapper">
+            <div class="about__inner">
+              <div class="about__tabs">
+                <button
+                  class="about__tabs-item about__tabs-item--active"
+                  data-tab="pulse"
+                  aria-label="Кнопка навигации по истории клуба"
+                >
+                  Pulse
+                </button>
+                <button
+                  class="about__tabs-item"
+                  data-tab="story"
+                  aria-label="Кнопка навигации по истории клуба"
+                >
+                  Our story
+                </button>
+                <button
+                  class="about__tabs-item"
+                  data-tab="approach"
+                  aria-label="Кнопка навигации по истории клуба"
+                >
+                  Approach
+                </button>
+                <button
+                  class="about__tabs-item"
+                  data-tab="plan"
+                  aria-label="Кнопка навигации по истории клуба"
+                >
+                  Our plan
+                </button>
+              </div>
+              <div class="about__content">
+                <h3 class="about__content-title">BEST GYM</h3>
+                <p class="about__content-txt">
+                  Ac nec est ultrices varius morbi et non. Donec quam sed eget
+                  purus. Elementum sed malesuada senectus feugiat faucibus morbi
+                  a neque ultricies. Nisl maecenas eget ultricies in lobortis.
+                </p>
+                <h3 class="about__content-title">OUR PLAN</h3>
+                <p class="about__content-txt">
+                  Ac nec est ultrices varius morbi et non. Donec quam sed eget
+                  purus. Elementum sed malesuada senectus feugiat.
+                </p>
+                <h3 class="about__content-title">TECHNIQUE</h3>
+                <p class="about__content-txt">
+                  Ac nec est ultrices varius morbi et non. Donec quam sed eget
+                  purus. Elementum sed malesuada senectus feugiat. At faucibus
+                  morbi a neque ultricies. Nisl maecenas eget ultricies in
+                  lobortis. Nec quam sed eget purus. Elementum sed malesuada
+                  senectus
+                </p>
+              </div>
+            </div>
+            <div class="about__stats">
+              <article class="about__stats-card">
+                <span class="about__stats-num">6</span>
+                <span class="about__stats-txt">YEARS OF EXPERIENCES</span>
+              </article>
+              <article class="about__stats-card">
+                <span class="about__stats-num">20</span>
+                <span class="about__stats-txt">SELECTED TRAINER</span>
+              </article>
+              <article class="about__stats-card">
+                <span class="about__stats-num">120K</span>
+                <span class="about__stats-txt">CALORIES BURNED</span>
+              </article>
+              <article class="about__stats-card">
+                <span class="about__stats-num">432</span>
+                <span class="about__stats-txt">HAPPY MEMBERS</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="advantage">
+        <div class="container container--xl">
+          <div class="advantage__inner">
+            <div class="advantage__img">
+              <picture>
+                <source
+                  srcset="./images/advantage/ganteli.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./images/advantage/ganteli.jpg"
+                  alt="Мужские руки поднимают гантели со стойки для гантелей"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <a href="#" class="advantage__card advantage__card-1">
+              <span class="advantage__subtitle">Training</span>
+              <h3 class="advantage__card-title">BEST GYM</h3>
+              <p class="advantage__card-txt">
+                Ac nec est ultrices varius morbi et non. Donec quam sed eget
+                purus. Elementum sed
+              </p>
+              <span class="advantage__card-link">Read more</span>
+            </a>
+            <div class="advantage__img">
+              <picture>
+                <source
+                  srcset="./images/advantage/tyaga.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./images/advantage/tyaga.jpg"
+                  alt="Мужчина подготавливает штангу"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <a href="#" class="advantage__card advantage__card-2">
+              <span class="advantage__subtitle">Training</span>
+              <h3 class="advantage__card-title">WEIGHT LOSS</h3>
+              <p class="advantage__card-txt">
+                Ac nec est ultrices varius morbi et non. Donec quam sed eget
+                purus. Elementum sed
+              </p>
+              <span href="#" class="advantage__card-link">Read more</span>
+            </a>
+            <a href="#" class="advantage__card advantage__card-3">
+              <span class="advantage__subtitle">Training</span>
+              <h3 class="advantage__card-title">BEST EQUIPMENT</h3>
+              <p class="advantage__card-txt">
+                Ac nec est ultrices varius morbi et non. Donec quam sed eget
+                purus. Elementum sed
+              </p>
+              <span href="#" class="advantage__card-link">Read more</span>
+            </a>
+            <div class="advantage__img">
+              <picture>
+                <source
+                  srcset="./images/advantage/prised.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./images/advantage/prised.png"
+                  alt="Черное-белое изображение девушки которая приседает со штангой"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <a href="#" class="advantage__card advantage__card-4">
+              <span class="advantage__subtitle">Training</span>
+              <h3 class="advantage__card-title">NUTRITION PLAN</h3>
+              <p class="advantage__card-txt">
+                Ac nec est ultrices varius morbi et non. Donec quam sed eget
+                purus. Elementum sed
+              </p>
+              <span href="#" class="advantage__card-link">Read more</span>
+            </a>
+            <div class="advantage__img">
+              <picture>
+                <source
+                  srcset="./images/advantage/runningwoman.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./images/advantage/runningwoman.jpg"
+                  alt="Девушка в спортивной одежде бегает по ступенькам"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="timetable">
+        <div class="container container--xl">
+          <div class="timetable__wrapper">
+            <h2 class="timetable__title" id="timetable">CLASSES TIMETABLE</h2>
+            <div class="timetable__btns">
+              <button
+                class="timetable__btn timetable__btn--active"
+                aria-label="Кнопка навигации по таблице"
+              >
+                ALL TRAINING
+              </button>
+              <button
+                class="timetable__btn"
+                aria-label="Кнопка навигации по таблице"
+              >
+                BODYBUILDING
+              </button>
+              <button
+                class="timetable__btn"
+                aria-label="Кнопка навигации по таблице"
+              >
+                CARDIO
+              </button>
+              <button
+                class="timetable__btn"
+                aria-label="Кнопка навигации по таблице"
+              >
+                GYM
+              </button>
+              <button
+                class="timetable__btn"
+                aria-label="Кнопка навигации по таблице"
+              >
+                POWERLIFTING
+              </button>
+            </div>
+            <div class="timetable__table">
+              <table>
+                <!-- Хедер таблицы -->
+                <thead>
+                  <tr class="timetable__header">
+                    <th class="timetable__th"></th>
+                    <th class="timetable__th">MONDAY</th>
+                    <th class="timetable__th">TUESDAY</th>
+                    <th class="timetable__th">WEDNESDAY</th>
+                    <th class="timetable__th">THURSDAY</th>
+                    <th class="timetable__th">FRIDAY</th>
+                    <th class="timetable__th">SATURDAY</th>
+                    <th class="timetable__th">SUNDAY</th>
+                  </tr>
+                </thead>
+                <!-- Хедер таблицы -->
+                <!-- Тело таблицы -->
+                <tbody class="timetable__body">
+                  <!-- 7:00 -->
+                  <tr class="timetable__row">
+                    <td class="timetable__data">07:00-08:00</td>
+                    <td class="timetable__data">
+                      <div class="timetable__data-inner">
+                        <span class="timetable__data-txt">FITNESS CLASS</span>
+                        <span class="timetable__data-employee"
+                          >Mark Thompson</span
+                        >
+                      </div>
+                    </td>
+                    <td class="timetable__data">
+                      <div class="timetable__data-inner">
+                        <span class="timetable__data-txt">BOXING</span>
+                        <span class="timetable__data-employee"
+                          >Sarah Anderson</span
+                        >
+                      </div>
+                    </td>
+                    <td class="timetable__data"></td>
+                    <td class="timetable__data">
+                      <div class="timetable__data-inner">
+                        <span class="timetable__data-txt">OPEN GYM</span>
+                        <span class="timetable__data-employee"
+                          >Jessica Roberts</span
+                        >
+                      </div>
+                    </td>
+                    <td class="timetable__data">
+                      <div class="timetable__data-inner">
+                        <span class="timetable__data-txt">BODYBUILDING</span>
+                        <span class="timetable__data-employee"
+                          >Michael Johnson</span
+                        >
+                      </div>
+                    </td>
+                    <td class="timetable__data"></td>
+                    <td class="timetable__data">
+                      <div class="timetable__data-inner">
+                        <span class="timetable__data-txt">OPEN GYM</span>
+                        <span class="timetable__data-employee"
+                          >Jessica Roberts</span
+                        >
+                      </div>
+                    </td>
+                  </tr>
+                  <!-- 7:00 -->
+
+                  <!-- 8:00 -->
+                  <tr class="timetable__row">
+                    <td class="timetable__data">08:00-09:00</td>
+                    <td class="timetable__data">
+                      <div class="timetable__data-inner">
+                        <span class="timetable__data-txt">BOXING</span>
+                        <span class="timetable__data-employee"
+                          >Sarah Anderson</span
+                        >
+                      </div>
+                    </td>
+                    <td class="timetable__data"></td>
+                    <td class="timetable__data">
+                      <div class="timetable__data-inner">
+                        <span class="timetable__data-txt"> BODYBUILDING</span>
+                        <span class="timetable__data-employee">
+                          Michael Johnson
+                        </span>
+                      </div>
+                    </td>
+                    <td class="timetable__data"></td>
+                    <td class="timetable__data" rowspan="2">
+                      <div class="timetable__data-inner">
+                        <span class="timetable__data-txt"> FITNESS CLASS</span>
+                        <span class="timetable__data-employee">
+                          Mark Thompson
+                        </span>
+                      </div>
+                    </td>
+                    <td class="timetable__data">
+                      <div class="timetable__data-inner">
+                        <span class="timetable__data-txt">BOXING</span>
+                        <span class="timetable__data-employee">
+                          Sarah Anderson
+                        </span>
+                      </div>
+                    </td>
+                    <td class="timetable__data"></td>
+                  </tr>
+                  <!-- 8:00 -->
+
+                  <!-- 9:00 -->
+                  <tr class="timetable__row">
+                    <td class="timetable__data">09:00-10:00</td>
+                    <td class="timetable__data"></td>
+                    <td class="timetable__data"></td>
+                    <td class="timetable__data" rowspan="2">
+                      <div class="timetable__data-inner">
+                        <span class="timetable__data-txt">BOXING </span>
+                        <span class="timetable__data-employee">
+                          Sarah Anderson
+                        </span>
+                      </div>
+                    </td>
+                    <td class="timetable__data"></td>
+                    <td class="timetable__data"></td>
+                    <td class="timetable__data" rowspan="2">
+                      <div class="timetable__data-inner">
+                        <span class="timetable__data-txt">BOXING</span>
+                        <span class="timetable__data-employee">
+                          Sarah Anderson
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <!-- 9:00 -->
+
+                  <!-- 10:00 -->
+                  <tr class="timetable__row">
+                    <td class="timetable__data">10:00-11:00</td>
+                    <td class="timetable__data">
+                      <div class="timetable__data-inner">
+                        <span class="timetable__data-txt">OPEN GYM </span>
+                        <span class="timetable__data-employee">
+                          Jessica Roberts
+                        </span>
+                      </div>
+                    </td>
+                    <td class="timetable__data"></td>
+                    <td class="timetable__data">
+                      <div class="timetable__data-inner">
+                        <span class="timetable__data-txt">BODYBUILDING </span>
+                        <span class="timetable__data-employee">
+                          Michael Johnson
+                        </span>
+                      </div>
+                    </td>
+                    <td class="timetable__data"></td>
+                    <td class="timetable__data">
+                      <div class="timetable__data-inner">
+                        <span class="timetable__data-txt">FITNESS CLASS</span>
+                        <span class="timetable__data-employee">
+                          Mark Thompson
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <!-- 10:00 -->
+
+                  <!-- 11:00 -->
+                  <tr class="timetable__row">
+                    <td class="timetable__data">11:00-12:00</td>
+                    <td class="timetable__data"></td>
+                    <td class="timetable__data">
+                      <div class="timetable__data-inner">
+                        <span class="timetable__data-txt">BODYBUILDING</span>
+                        <span class="timetable__data-employee">
+                          Michael Johnson
+                        </span>
+                      </div>
+                    </td>
+                    <td class="timetable__data">
+                      <div class="timetable__data-inner">
+                        <span class="timetable__data-txt">BOXING</span>
+                        <span class="timetable__data-employee">
+                          Sarah Anderson
+                        </span>
+                      </div>
+                    </td>
+                    <td class="timetable__data"></td>
+                    <td class="timetable__data">
+                      <div class="timetable__data-inner">
+                        <span class="timetable__data-txt">OPEN GYM</span>
+                        <span class="timetable__data-employee">
+                          Jessica Roberts
+                        </span>
+                      </div>
+                    </td>
+                    <td class="timetable__data"></td>
+                    <td class="timetable__data">
+                      <div class="timetable__data-inner">
+                        <span class="timetable__data-txt">FITNESS CLASS</span>
+                        <span class="timetable__data-employee">
+                          Mark Thompson
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <!-- 11:00 -->
+                </tbody>
+                <!-- Тело таблицы -->
+              </table>
+            </div>
+          </div>
+          <a href="#timetable" class="timetable__link">
+            <div class="timetable__link-btn">
+              <span class="timetable__link-txt">VIEW FULL TIMETABLE</span>
+              <svg width="21" height="21">
+                <use href="./icons/review.svg#arrow"></use>
+              </svg>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="lightbox">
+        <div class="container container--xl">
+          <div class="lightbox__video">
+            <picture>
+              <source
+                srcset="./images/lightbox-preview.webp"
+                type="image/webp"
+              />
+              <img
+                width="1920"
+                height="1080"
+                src="./images/lightbox-preview.png"
+                alt="Превью видео фитнес-центра pulse"
+                loading="lazy"
+              />
+            </picture>
+
+            <a
+              href="https://www.youtube.com/watch?v=PAMbzvQQDJE"
+              class="lightbox__link"
+              data-fslightbox
+            >
+              <img
+                src="./icons/play-button.png"
+                alt="Кнопка play видеопроигрывателя"
+                class="lightbox__btn"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="accordion">
+        <div class="container container--l">
+          <div class="accordion__inner">
+            <h2 class="accordion__title">OUR FITNESS CENTER</h2>
+            <div class="accordion__details details">
+              <details class="detail" open>
+                <summary class="detail__item">
+                  <span class="detail__time">06:00 - 23:00</span>
+                  <span class="detail__name">Honolulu</span>
+                </summary>
+                <p class="detail__txt">
+                  Ac nec est ultrices varius morbi et non. Donec quam sed eget
+                  purus. Elementum sed malesuada senectus.Ac nec est ultrices
+                  varius morbi et non. Donec quam sed eget purus. Elementum sed
+                  malesuada senectus.Ac nec est ultrices varius morbi et non.
+                  Donec quam sed eget purus. Elementum sed malesuada senectus.
+                </p>
+              </details>
+              <details class="detail">
+                <summary class="detail__item">
+                  <span class="detail__time">06:00 - 23:00</span
+                  ><span class="detail__name">Hilo</span>
+                </summary>
+                <p class="detail__txt">
+                  Ac nec est ultrices varius morbi et non. Donec quam sed eget
+                  purus. Elementum sed malesuada senectus.Ac nec est ultrices
+                  varius morbi et non. Donec quam sed eget purus. Elementum sed
+                  malesuada senectus.
+                </p>
+              </details>
+              <details class="detail">
+                <summary class="detail__item">
+                  <span class="detail__time">06:00 - 23:00</span
+                  ><span class="detail__name">Lahaina</span>
+                </summary>
+                <p class="detail__txt">
+                  Ac nec est ultrices varius morbi et non. Donec quam sed eget
+                  purus. Elementum sed malesuada senectus.Ac nec est ultrices
+                  varius morbi et non. Donec quam sed eget purus. Elementum sed
+                  malesuada senectus.Ac nec est ultrices varius morbi et non.
+                  Donec quam sed eget purus. Elementum sed malesuada senectus.Ac
+                  nec est ultrices varius morbi et non. Donec quam sed eget
+                  purus. Elementum sed malesuada senectus.
+                </p>
+              </details>
+              <details class="detail">
+                <summary class="detail__item">
+                  <span class="detail__time">06:00 - 23:00</span
+                  ><span class="detail__name">Kapolei</span>
+                </summary>
+                <p class="detail__txt">
+                  Ac nec est ultrices varius morbi et non. Donec quam sed eget
+                  purus. Elementum sed malesuada senectus.Ac nec est ultrices
+                  varius morbi et non. Donec quam sed eget purus. Elementum sed
+                  malesuada senectus.Ac nec est ultrices varius morbi et non.
+                  Donec quam sed eget purus. Elementum sed malesuada senectus.
+                </p>
+              </details>
+              <details class="detail">
+                <summary class="detail__item">
+                  <span class="detail__time">06:00 - 23:00</span
+                  ><span class="detail__name">Pearl City</span>
+                </summary>
+                <p class="detail__txt">
+                  Ac nec est ultrices varius morbi et non. Donec quam sed eget
+                  purus. Elementum sed malesuada senectus.Ac nec est ultrices
+                  varius morbi et non. Donec quam sed eget purus. Elementum sed
+                  malesuada senectus.Ac nec est ultrices varius morbi et non.
+                  Donec quam sed eget purus. Elementum sed malesuada senectus.Ac
+                  nec est ultrices varius morbi et non. Donec quam sed eget
+                  purus. Elementum sed malesuada senectus.Ac nec est ultrices
+                  varius morbi et non. Donec quam sed eget purus. Elementum sed
+                  malesuada senectus.
+                </p>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="coaches">
+        <div class="container container--xl">
+          <span class="coaches__dec">Within</span>
+          <div class="coaches__inner">
+            <div class="coaches__row">
+              <h2 class="coaches__title">MEET THE PROS</h2>
+              <p class="coaches__txt">
+                Ac nec est ultrices varius morbi et non. Donec quam sed eget
+                purus. Elementum sed malesuada senectus.
+              </p>
+            </div>
+            <div class="coaches__info">
+              <article class="coaches__card">
+                <a href="#" class="coaches__link">
+                  <div class="coaches__image">
+                    <picture>
+                      <source
+                        srcset="./images/coaches/sarah-anderson.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        width="393"
+                        height="488"
+                        src="./images/coaches/sarah-anderson.png"
+                        alt="Девушка занимается единоборствами под руководством тренера"
+                        loading="lazy"
+                      />
+                    </picture>
+                  </div>
+                  <div class="coaches__product">
+                    <div class="coaches__features">
+                      <span class="coaches__card-txt">Boxing coach</span>
+                    </div>
+                    <h3 class="coaches__card-subtitle">Sarah Anderson</h3>
+                  </div>
+                </a>
+              </article>
+              <article class="coaches__card">
+                <a href="#" class="coaches__link">
+                  <div class="coaches__image">
+                    <picture>
+                      <source
+                        srcset="./images/coaches/mark-thompson.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        width="393"
+                        height="488"
+                        src="./images/coaches/mark-thompson.png"
+                        alt="Мужчина в фитнесс центре занимается кардио тренировкой с гирей"
+                        loading="lazy"
+                      />
+                    </picture>
+                  </div>
+                  <div class="coaches__product">
+                    <div class="coaches__features">
+                      <span class="coaches__card-txt">Fitness coach</span>
+                    </div>
+                    <h3 class="coaches__card-subtitle">Mark Thompson</h3>
+                  </div>
+                </a>
+              </article>
+              <article class="coaches__card">
+                <a href="#" class="coaches__link">
+                  <div class="coaches__image">
+                    <picture>
+                      <source
+                        srcset="./images/coaches/jessica-roberts.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        width="393"
+                        height="488"
+                        src="./images/coaches/jessica-roberts.png"
+                        alt="Спортивная девушка с розовыми волосами укрепляет мышцы тела стоя в планке в фитнесс центре"
+                        loading="lazy"
+                      />
+                    </picture>
+                  </div>
+                  <div class="coaches__product">
+                    <div class="coaches__features">
+                      <span class="coaches__card-txt">GYM Coach</span>
+                    </div>
+                    <h3 class="coaches__card-subtitle">Jessica Roberts</h3>
+                  </div>
+                </a>
+              </article>
+              <article class="coaches__card">
+                <a href="#" class="coaches__link">
+                  <div class="coaches__image">
+                    <picture>
+                      <source
+                        srcset="./images/coaches/michael-johnson.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        width="393"
+                        height="488"
+                        src="./images/coaches/michael-johnson.png"
+                        alt="Спортивная девушка с розовыми волосами укрепляет мышцы тела стоя в планке в фитнесс центре"
+                        loading="lazy"
+                      />
+                    </picture>
+                  </div>
+                  <div class="coaches__product">
+                    <div class="coaches__features">
+                      <span class="coaches__card-txt">Bodybuilding coach</span>
+                    </div>
+                    <h3 class="coaches__card-subtitle">Michael Johnson</h3>
+                  </div>
+                </a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="blog">
+        <div class="container container--xl">
+          <div class="blog__wrapper">
+            <div class="blog__inner">
+              <h2 class="blog__title">Latest blog</h2>
+              <a class="blog__btn" href="#">Read more</a>
+              <div class="blog__content">
+                <article class="content__card">
+                  <picture>
+                    <source
+                      srcset="./images/blog/sport-woman.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      width="393"
+                      height="497"
+                      src="./images/blog/sport-woman.png"
+                      alt="Женщина в розовом спортивном топе сидит на тренажере"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <div class="content__card-inner">
+                    <span class="content__card-time">21 FEBUARY 2023</span>
+                    <span class="content__card-txt"
+                      >Achieve Your Fitness Goals: Insights from Our Center
+                    </span>
+                  </div>
+                </article>
+                <article class="content__card">
+                  <picture>
+                    <source
+                      srcset="./images/blog/kanat.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      width="393"
+                      height="497"
+                      src="./images/blog/kanat.png"
+                      alt="Черно-белое изображение мужских рук на канате"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <div class="content__card-inner">
+                    <span class="content__card-time">21 FEBUARY 2023</span>
+                    <span class="content__card-txt"
+                      >Achieve Your Fitness Goals: Insights from Our Center
+                    </span>
+                  </div>
+                </article>
+                <article class="content__card">
+                  <picture>
+                    <source
+                      srcset="./images/blog/sidit.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      width="393"
+                      height="497"
+                      src="./images/blog/sidit.png"
+                      alt="Мужчина сидит над штангой"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <div class="content__card-inner">
+                    <span class="content__card-time">21 FEBUARY 2023</span>
+                    <span class="content__card-txt"
+                      >Achieve Your Fitness Goals: Insights from Our Center
+                    </span>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__top">
+              <img
+                width="269"
+                height="50"
+                src="./icons/logo.svg"
+                alt="Логотип фитнесс центра Pulse"
+                loading="lazy"
+              />
+              <span class="footer__top-txt">Power from within</span>
+            </div>
+            <div class="footer__main">
+              <div class="footer__contacts">
+                <div class="contacts__info">
+                  <span class="info__subtitle">Contact us</span>
+                  <button
+                    class="info__email"
+                    type="email"
+                    aria-label="E-mail для связи"
+                  >
+                    hello@pulse.com
+                  </button>
+                  <button
+                    class="info__phone"
+                    type="phone"
+                    aria-label="Телефон для связи"
+                  >
+                    +907 683 8196
+                  </button>
+                  <div class="info__social">
+                    <span class="social__subtitle">Follow us</span>
+                    <div class="social__links">
+                      <a href="#" class="social__link">
+                        <svg width="20" height="20">
+                          <use href="./icons/social.svg#facebook"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="social__link">
+                        <svg width="20" height="20">
+                          <use href="./icons/social.svg#twitter"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="social__link">
+                        <svg width="20" height="20">
+                          <use href="./icons/social.svg#instagram"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer__details">
+                <div class="details_location">
+                  <span class="location__subtitle">Our location</span>
+                  <p class="location__name">Hawaii</p>
+                  <p class="location__address">
+                    828 Timbercrest Road, Healy City, AK 99743
+                  </p>
+                  <p class="location__name">New York</p>
+                  <p class="location__address">
+                    828 Timbercrest Road, Healy City, AK 99743
+                  </p>
+                </div>
+                <div class="details__shedule">
+                  <span class="shedule__subtitle">Opening hours</span>
+                  <p class="shedule__day">Monday-Friday</p>
+                  <p class="shedule__time">Our doors are open 06:00 - 22:00</p>
+                  <p class="shedule__day">Weekends</p>
+                  <p class="shedule__time">Our doors are open 10:00 - 21:00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copy">
+          <div class="container container--xl">
+            <span class="copyright"
+              >Copyright <strong>Dotcreativemarket</strong>, All Rights
+              Reserved</span
+            >
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="./js/burger.js"></script>
+    <script src="./js/tabs.js"></script>
+    <script src="./js/timetable.js"></script>
+    <script src="./js/fslightbox.js"></script>
+  </body>
+</html>
