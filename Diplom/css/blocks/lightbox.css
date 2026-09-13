@@ -1,0 +1,23 @@
+.lightbox__video {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lightbox__link {
+  position: absolute;
+  display: block;
+  width: clamp(4.1rem, 2.29rem + 4.63vw, 12.2rem);
+  height: clamp(4.1rem, 2.29rem + 4.63vw, 12.2rem);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: filter var(--tr-base);
+}
+
+@media (any-hover: hover) {
+  .lightbox__link:hover {
+    filter: drop-shadow(0 0 20px #8b56027d) drop-shadow(0 0 40px #8b56027d);
+  }
+}

@@ -1,0 +1,31 @@
+:root {
+  /* fonts */
+  --font-family: "Oswald", sans-serif;
+  --second-family: "Archivo", sans-serif;
+
+  /* colors */
+  --bg-color: #141414;
+  --secondary-bg-color: #e8e6e4;
+  --accent-color: #f47521;
+  --main-color: #fff;
+  --inactive-color:#979797;
+  /* colors */
+
+  /* layers */
+  --layer-negative: -1;
+  --layer-0: 0;
+  --layer-1: 1;
+  --layer-2: 2;
+  --layer-3: 3;
+  /* layers */
+
+  /*  transition  */
+  --tr-base : 0.6s ease;
+  --secondary-tr: 0.3s ease;
+  --anim-spin: spin 8s linear infinite;
+  /*  transition  */
+
+  /* border */
+  --border-base: 1px solid var(--bg-color);
+  /* border */
+}

@@ -1,0 +1,190 @@
+.footer {
+  overflow: hidden;
+}
+
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ffffff80;
+  padding-block: clamp(3.3rem, 2.06rem + 3.19vw, 7.5rem);
+  margin-bottom: clamp(5.5rem, 4.14rem + 3.49vw, 10.1rem);
+}
+
+.footer__main {
+  display: flex;
+  margin-bottom: clamp(7.1rem, 5rem + 5.39vw, 14.2rem);
+}
+
+.footer__top-txt {
+  position: relative;
+  font-family: var(--font-family);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: clamp(2.5rem, 1.76rem + 1.9vw, 5rem);
+  color: var(--main-color);
+}
+
+.footer__top-txt::after {
+  position: absolute;
+  top: 0;
+  left: -10%;
+  transform: translate(10%, -9%);
+  content: "";
+  z-index: var(--layer-negative);
+  width: clamp(3.7rem, 2.58rem + 2.88vw, 7.5rem);
+  height: clamp(3.7rem, 2.58rem + 2.88vw, 7.5rem);
+  border-radius: 100%;
+  background: var(--accent-color);
+}
+
+.footer__contacts {
+  margin-right: auto;
+}
+
+.contacts__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  max-width: 263px;
+}
+
+.info__subtitle {
+  font-family: var(--second-family);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: clamp(1.2rem, 0.96rem + 0.61vw, 2rem);
+  color: #a6a6a6;
+}
+
+.info__email {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: clamp(2.1rem, 1.48rem + 1.59vw, 4.2rem);
+  color: var(--main-color);
+}
+
+.info__phone {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: clamp(2.1rem, 1.48rem + 1.59vw, 4.2rem);
+  color: var(--main-color);
+  margin-bottom: 47px;
+}
+
+.info__social {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.2rem, 0.84rem + 0.91vw, 2.4rem);
+}
+
+.social__subtitle {
+  font-family: var(--second-family);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: clamp(1.2rem, 0.96rem + 0.61vw, 2rem);
+  color: #a6a6a6;
+}
+
+.social__links {
+  display: flex;
+  gap: clamp(2.2rem, 1.52rem + 1.75vw, 4.5rem);
+}
+
+.footer__details {
+  display: flex;
+  gap: clamp(8.3rem, 1.84rem + 6.3vw, 16.6rem);
+}
+
+.details_location {
+  max-width: 203px;
+}
+
+.location__subtitle {
+  display: block;
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: clamp(1.2rem, 0.96rem + 0.61vw, 2rem);
+  color: #a6a6a6;
+  margin-bottom: clamp(1.2rem, 0.84rem + 0.91vw, 2.4rem);
+}
+
+.location__name {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: clamp(2.1rem, 1.48rem + 1.59vw, 4.2rem);
+  color: var(--main-color);
+}
+
+.location__address {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: clamp(1.2rem, 0.96rem + 0.61vw, 2rem);
+  color: #a6a6a6;
+}
+
+.details__shedule {
+  max-width: 221px;
+}
+
+.shedule__subtitle {
+  display: block;
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: clamp(1.2rem, 0.96rem + 0.61vw, 2rem);
+  color: #a6a6a6;
+  margin-bottom: clamp(1.2rem, 0.84rem + 0.91vw, 2.4rem);
+}
+
+.shedule__day {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: clamp(2.1rem, 1.48rem + 1.59vw, 4.2rem);
+  color: var(--main-color);
+}
+
+.shedule__time {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: clamp(1.2rem, 0.96rem + 0.61vw, 2rem);
+  color: #a6a6a6;
+}
+
+.location__address:not(:last-child),
+.shedule__time:not(:last-child) {
+  margin-bottom: clamp(1.2rem, 0.84rem + 0.91vw, 2.4rem);
+}
+
+.copyright {
+  display: block;
+  background-color: #303030;
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: clamp(1.2rem, 1.08rem + 0.3vw, 1.6rem);
+  line-height: 194%;
+  opacity: 0.6;
+  color: var(--main-color);
+  padding-block: clamp(1.4rem, 0.96rem + 1.14vw, 2.9rem);
+  padding-left: clamp(5.2rem, 3.66rem + 3.95vw, 10.4rem);
+}
+
+.copyright strong {
+  font-weight: 700;
+}
+
+@media (width <= 768px) {
+  .footer__top {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .footer__main {
+    align-items: center;
+  }
+
+  .footer__details {
+    flex-direction: column;
+    gap: clamp(2rem, 1.5rem + 2vw, 3rem);
+  }
+}

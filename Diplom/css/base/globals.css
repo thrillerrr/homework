@@ -1,0 +1,31 @@
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.body {
+  background: #141414;
+  min-width: 390px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  height: 100%;
+  max-width: 1708px;
+}
+
+.container--l {
+  margin: 0 auto;
+  max-width: 1212px;
+}
+
+.container--xl {
+  padding: 0;
+  max-width: 1920px;
+}
+
+picture,
+img {
+  display: block;
+}
