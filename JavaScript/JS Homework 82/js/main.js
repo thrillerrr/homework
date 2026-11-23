@@ -78,7 +78,6 @@ form.addEventListener("submit", (event) => {
 todosList.addEventListener("click", (event) => {
   const todo = event.target.closest(".todo");
 
-  // Клик был вне задачи
   if (!todo) {
     return;
   }
