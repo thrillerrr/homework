@@ -1,0 +1,187 @@
+.review__btn {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: var(--accent-color);
+  padding-block: clamp(1.1rem, 1.08rem + 1.59vw, 4.2rem);
+  width: 100%;
+  transition: background-color var(--tr-base);
+}
+
+.review__link-txt {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: clamp(1.2rem, 0.56rem + 0.61vw, 1.6rem);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--bg-color);
+  margin-right: clamp(1.8rem, 1.24rem + 1.44vw, 3.7rem);
+  transition: color var(--tr-base);
+}
+
+.review__btn svg {
+  width: clamp(1.2rem, 0.67rem + 0.83vw, 2.1rem);
+  height: clamp(1.2rem, 0.67rem + 0.83vw, 2.1rem);
+  transition: transform var(--tr-base);
+}
+
+.review__background {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.review__background::after {
+  position: absolute;
+  content: url(../../icons/sticker.svg);
+  z-index: var(--layer-3);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(8.5rem, 5.36rem + 8.04vw, 21.1rem);
+  height: clamp(8.5rem, 5.36rem + 8.04vw, 21.1rem);
+  animation: var(--anim-spin);
+}
+
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.review__background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img__wrapper {
+  position: relative;
+}
+
+.img__wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img__wrapper::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  z-index: var(--layer-0);
+  backdrop-filter: blur(9px);
+  background: #72320780;
+}
+
+.review__col {
+  position: relative;
+}
+
+.review__card {
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: var(--layer-3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(2.5rem, 0.87rem + 4.17vw, 11rem);
+}
+
+.review__txt {
+  position: relative;
+  font-family: var(--font-family);
+  text-transform: uppercase;
+  font-size: clamp(1.5rem, 0.35rem + 3.03vw, 5.5rem);
+  text-align: center;
+  color: var(--main-color);
+}
+
+.review__txt::after {
+  position: absolute;
+  content: url(../../icons/quotes.svg);
+  top: -35%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  width: clamp(3.5rem, 0.9rem + 4.1vw, 9.9rem);
+  height: clamp(3.5rem, 0.14rem + 3.49vw, 10.1rem);
+}
+
+.review__txt::before {
+  position: absolute;
+  content: "";
+  bottom: -15%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 83px;
+  height: 3px;
+  background: var(--accent-color);
+}
+
+.review__visitor {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.review__subtitle {
+  font-family: var(--second-family);
+  font-size: clamp(1rem, 0.7rem + 0.76vw, 2rem);
+  text-align: center;
+  color: var(--main-color);
+  opacity: 0.7;
+}
+
+.review__name {
+  font-family: var(--second-family);
+  font-weight: 700;
+  text-wrap: nowrap;
+  font-size: clamp(1.5rem, 1.66rem + 1.14vw, 3rem);
+  text-align: center;
+  color: var(--main-color);
+}
+
+@media (any-hover: hover) {
+  .review__btn:hover {
+    background-color: var(--main-color);
+  }
+
+  .review__btn:hover .review__link-txt {
+    color: var(--accent-color);
+  }
+
+  .review__btn:hover svg {
+    transform: rotate(90deg);
+  }
+}
+
+@media (width <= 768px) {
+  .review__btn{
+    align-items: normal;
+  }
+
+  .review__background {
+    flex-direction: column-reverse;
+  }
+
+  .review__background img {
+    height: clamp(19.5rem, 17.73rem + 14.8vw, 39rem);
+  }
+
+  .review__card {
+    top: 55%;
+  }
+
+  .review__txt::after {
+    top: -60%;
+  }
+
+  .review__txt::before {
+    bottom: -15%;
+  }
+}
