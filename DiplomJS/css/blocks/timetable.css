@@ -1,0 +1,201 @@
+.timetable__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding-top: clamp(5.5rem, 4.08rem + 3.64vw, 10.3rem);
+  padding-bottom: clamp(7.3rem, 5.14rem + 5.54vw, 14.6rem);
+  padding-inline: 1.5rem;
+}
+
+.timetable__wrapper::before {
+  position: absolute;
+  content: url(../../icons/dec.svg);
+  width: 58%;
+  right: 0;
+  top: 0;
+  transform: translate(78%, 10%);
+}
+
+.timetable__title {
+  text-align: center;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: clamp(2.5rem, 1.36rem + 2.66vw, 7rem);
+  color: var(--main-color);
+  margin-bottom: clamp(2.3rem, 1.29rem + 2.58vw, 6.7rem);
+}
+
+.timetable__btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(2.1rem, 1.86rem + 3.19vw, 8.3rem);
+  margin-bottom: clamp(3rem, 2.08rem + 2.35vw, 6.1rem);
+}
+
+.timetable__btn {
+  position: relative;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: clamp(1.5rem, 0.86rem + 1.14vw, 3rem);
+  opacity: 0.3;
+  color: var(--main-color);
+  transition: opacity var(--secondary-tr);
+}
+
+.timetable__btn--active {
+  opacity: 1;
+}
+
+.timetable__btn::before {
+  position: absolute;
+  content: "";
+  z-index: var(--layer-negative);
+  top: -0.3rem;
+  left: -1.5rem;
+  width: clamp(2rem, 1.41rem + 1.52vw, 4rem);
+  height: clamp(2rem, 1.41rem + 1.52vw, 4rem);
+  border-radius: 100%;
+  background: var(--accent-color);
+  transform: scale(0);
+  opacity: 0;
+  transition:
+    transform var(--tr-base),
+    opacity var(--tr-base);
+}
+
+.timetable__btn--active::before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+@media (any-hover: hover) {
+}
+
+.timetable__table {
+  vertical-align: middle;
+  max-width: 1268px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.timetable__table table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+  min-width: 630px;
+}
+
+.timetable__th {
+  font-family: var(--font-family);
+  font-weight: normal;
+  font-size: clamp(1rem, 0.5rem + 0.76vw, 2rem);
+  color: #b5b5b5;
+  padding: clamp(1.6rem, 1.13rem + 1.21vw, 3.2rem);
+}
+
+.timetable__header {
+  border-bottom: 2px solid #2b2b2b;
+}
+
+.timetable__data {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: clamp(1rem, 0.5rem + 0.76vw, 2rem);
+  text-align: center;
+  color: #b5b5b5;
+  padding-block: clamp(2.1rem, 1.08rem + 1.59vw, 4.2rem);
+}
+
+.timetable__th,
+.timetable__data {
+  border-bottom: 2px solid #2b2b2b;
+  border-right: 2px solid #2b2b2b;
+}
+
+.timetable__th:last-child,
+.timetable__data:last-child {
+  border-right: none;
+  border-left: 2px solid #2b2b2b;
+}
+
+.timetable__row:last-child .timetable__data {
+  border-bottom: none;
+}
+
+.timetable__data-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.timetable__data-txt {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: clamp(1rem, 0.5rem + 0.76vw, 2rem);
+  text-align: center;
+  color: var(--main-color);
+}
+
+.timetable__data-employee {
+  font-family: var(--second-family);
+  font-size: clamp(0.8rem, 0.26rem + 0.61vw, 1.6rem);
+  line-height: 169%;
+  text-align: center;
+  color: var(--inactive-color);
+}
+
+.timetable__link-btn {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: var(--accent-color);
+  padding-block: clamp(1.1rem, 1.08rem + 1.59vw, 4.2rem);
+  width: 100%;
+  transition: background-color var(--tr-base);
+}
+
+@media (width <= 768px) {
+  .timetable__link-btn {
+    align-items: normal;
+  }
+}
+
+.timetable__link-btn svg {
+  width: (1.2rem, 0.67rem + 0.83vw, 2.1rem);
+  height: clamp(1.2rem, 0.67rem + 0.83vw, 2.1rem);
+  transition: transform var(--tr-base);
+}
+
+.timetable__link-txt {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: clamp(1.2rem, 0.56rem + 0.61vw, 1.6rem);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--bg-color);
+  margin-right: clamp(1.8rem, 1.24rem + 1.44vw, 3.7rem);
+  transition: color var(--tr-base);
+}
+
+@media (any-hover: hover) {
+  .timetable__link-btn:hover {
+    background-color: var(--main-color);
+  }
+
+  .timetable__link-btn:hover .timetable__link-txt {
+    color: var(--accent-color);
+  }
+
+  .timetable__link-btn:hover svg {
+    transform: rotate(-90deg);
+  }
+
+  .timetable__btn:hover {
+    opacity: 1;
+  }
+}

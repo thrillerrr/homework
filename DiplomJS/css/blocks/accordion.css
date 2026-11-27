@@ -1,0 +1,104 @@
+.accordion {
+  background: var(--secondary-bg-color);
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.accordion__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.accordion__title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: clamp(3.5rem, 2.46rem + 2.66vw, 7rem);
+  color: var(--bg-color);
+  padding-top: clamp(7.5rem, 5.25rem + 5.77vw, 15.1rem);
+  padding-bottom: clamp(3rem, 2.11rem + 2.28vw, 6rem);
+}
+
+.accordion__details {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: clamp(10.5rem, 7.39rem + 7.97vw, 21rem);
+}
+
+.detail {
+  border-top: var(--border-base);
+}
+
+.detail:last-child {
+  border-bottom: var(--border-base);
+}
+
+.detail__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: clamp(5.5rem, 3.84rem + 4.25vw, 11.1rem);
+  font-family: var(--font-family);
+  font-size: clamp(1rem, 0.7rem + 0.76vw, 2rem);
+  color: var(--bg-color);
+  padding-block: clamp(1.5rem, 1.03rem + 1.21vw, 3.1rem);
+  cursor: pointer;
+}
+
+.detail__item::after {
+  display: block;
+  content: "";
+  width: clamp(1.1rem, 0.8rem + 0.76vw, 2.1rem);
+  height: clamp(1.1rem, 0.8rem + 0.76vw, 2.1rem);
+  background: url(../../icons/arrow.svg) no-repeat center/cover;
+  transition: transform var(--tr-base);
+}
+
+.detail[open] .detail__item::after {
+  transform: rotate(90deg);
+}
+
+.detail__name {
+  display: block;
+  margin-right: auto;
+  max-width: 100%;
+  position: relative;
+  z-index: var(--layer-1);
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: clamp(1.5rem, 1.06rem + 1.14vw, 3rem);
+  line-height: 0.9;
+  color: var(--bg-color);
+}
+
+.detail__name::before {
+  position: absolute;
+  content: "";
+  z-index: var(--layer-negative);
+  top: -60%;
+  left: -20%;
+  width: clamp(2.4rem, 1.36rem + 2.66vw, 5.9rem);
+  height: clamp(2.4rem, 1.36rem + 2.66vw, 5.9rem);
+  border-radius: 100%;
+  background: var(--accent-color);
+  opacity: 0;
+  transform: scale(0);
+  transition:
+    opacity var(--tr-base),
+    transform var(--tr-base);
+}
+
+.detail[open] .detail__name::before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.detail__txt {
+  font-family: var(--second-family);
+  font-size: clamp(1.2rem, 0.7rem + 0.76vw, 2rem);
+  line-height: 1.69;
+  text-align: center;
+  max-width: 100%;
+  color: var(--bg-color);
+  padding-bottom: 3rem;
+}
